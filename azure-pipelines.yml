@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
 
   trigger:
-- '*'
+ - '*'
 
 pool:
   vmImage: 'ubuntu-20.04'
@@ -62,5 +62,6 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
     
  
